@@ -10,7 +10,7 @@
     
         <!-- Required meta tags -->
         <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <!-- Bootstrap CSS -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
@@ -64,6 +64,18 @@
           .navbar {
             font-family: Montserrat, Georgia, Times New Roman;
           }
+          @media only screen and (max-width:800px) {
+          /* For tablets: */
+          .bake, .details {
+            width: 80%;
+            }
+          }
+          @media only screen and (max-width:500px) {
+          /* For mobile phones: */
+          .bake, .details {
+            width: 100%;
+            }
+          }
 
 </style>
 <!-- Hotjar Tracking Code for my site -->
@@ -113,6 +125,7 @@
 
 <!-- Main Content -->
 <br>
+<div class="bake">
 <div class="text-left" style="margin: bottom 20px;">
  
     <h1 class="col-md-2 offset-md-1">Baking</h1>
@@ -120,7 +133,7 @@
 
     <div class="row">
         <div class="col-md-2 offset-md-1">
-            <img class="img-responsive" src="/natallia-nagorniak-ghCp99x4lrQ-unsplash.jpg" alt="baking">
+            <img class="img-responsive" src="../Hobbies/Images/natallia-nagorniak-ghCp99x4lrQ-unsplash.jpg" alt="baking" style="width:100%">
         </div>
     <div class="col-md-6 offset-md-2">
         <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Facilisi volutpat, feugiat pellentesque adipiscing praesent. Est eget ultrices eu ut. Massa pellentesque ac quis ut arcu velit. Ultrices sapien amet integer bibendum feugiat pellentesque integer cras. Bibendum diam laoreet donec tempus. Egestas at ipsum enim sed nunc tincidunt semper cursus. Nec non libero quam mauris nascetur est tristique vel vel. Condimentum vel metus non quam porta non.</p>
@@ -132,6 +145,7 @@
     </div>
 </div>
 
+<div class="details">
 <div class="container-fluid">
 
     <div class="row">
@@ -154,7 +168,8 @@
 
     </div>
   </div>
-
+</div>
+</div>
 
 <!-- Footer --> 
 
