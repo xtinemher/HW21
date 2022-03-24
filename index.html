@@ -49,13 +49,19 @@
           .navbar {
             font-family: Montserrat, Georgia, Times New Roman;
           }
+          @media only screen and (max-width:800px) {
+          /* For tablets: */
+          .main, .bottomNav {
+            width: 100%;
+            }
+          }
+          @media only screen and (max-width:500px) {
+          /* For mobile phones: */
+          .main, .bottomNav {
+            width: 100%;
+            }
+          }
 
-<!--For Tablets-->
-          @media only screen and (max-width:800px) 
-
-<!--For Mobile Phones-->
-          @media only screen and (max-width:500px) 
-          
 </style>
 
 <!-- Hotjar Tracking Code for my site -->
@@ -105,6 +111,7 @@
 
 <!-- Jumbotron -->
 
+<div class="main">
 <div class="jumbotron text-center" style="margin-bottom:0">
   <div class="col-md-8 offset-md-2">
     <h1>
@@ -118,13 +125,14 @@
       </h3>
       </div> 
 </div>
-
+</div>
 
 
 
 
 <!-- Footer --> 
 
+<div class="bottomNav">
 <div class="jumbotron text-left" style="margin-bottom:0">
 
   
@@ -165,7 +173,7 @@
       </ul>
   </div>
 </div>
-  
+</div>
       
 
     </body>
